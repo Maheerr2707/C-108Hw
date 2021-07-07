@@ -5,7 +5,7 @@ import plotly.figure_factory as ff
 
 df = pd.read_csv("data.csv")
 
-roll_no = df["Roll No"].tolist()
+roll_no = df["Marks In Percentage"].tolist()
 
-fig = ff.create_distplot([roll_no],["Roll No"],show_hist=False)
+fig = ff.create_distplot([roll_no],["Marks In Percentage"],show_hist=False)
 fig.show()
