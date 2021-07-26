@@ -7,5 +7,5 @@ df = pd.read_csv("data.csv")
 
 roll_no = df["Marks In Percentage"].tolist()
 
-fig = ff.create_distplot([roll_no],["Marks In Percentage"],show_hist=False)
+fig = ff.create_distplot([df["Marks In Percentage"].tolist()], ["Marks In Percentage"])
 fig.show()
